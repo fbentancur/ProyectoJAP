@@ -28,7 +28,11 @@ function mostrarProductosOk(products){
     }
 }
 function mostrarError(error){
-   /* to do <h4 class="alert-heading">Funcionalidad en desarrollo</h4> */
+    let divError = document.getElementById('product-error')
+    divError.innerHTML+=`
+        <div class="alert alert-danger text-center" role="alert">
+            <h4 class="alert-heading">Error al consultar los productos</h4> 
+        </div>`
 }
 window.addEventListener("load", function(){
     mostrarProductosDeCategoria(101)
