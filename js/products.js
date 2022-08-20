@@ -5,7 +5,7 @@ function mostrarProductosDeCategoria(categoria){
                 mostrarProductosOk(result.data.products)
             }
             else{
-                mostrarError(result.data)
+                mostrarError()
             }
         })
 }
@@ -27,7 +27,7 @@ function mostrarProductosOk(products){
             </div>`
     }
 }
-function mostrarError(error){
+function mostrarError(){
     let divError = document.getElementById('product-error')
     divError.innerHTML+=`
         <div class="alert alert-danger text-center" role="alert">
