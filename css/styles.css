@@ -217,3 +217,33 @@ a.custom-card:hover {
 .userName{
   color: white;
 }
+.filters-div{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+.filters-row{
+  display: flex;
+  flex-direction: row;
+}
+.div-exterior{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+.filters-row1{
+  justify-content: flex-end;
+  gap: 10px;
+}
+.filters-row2{
+  justify-content: space-between;
+}
+.filter-button{
+  width: 50px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 8px;
+  text-align: center;
+}

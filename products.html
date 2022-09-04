@@ -43,6 +43,22 @@
     <div class="container">
       <h1 class="product-title">Productos</h1>
       <h2 class="product-subtitle">Aqui verás todos los productos de la categoría auto</h2>
+      <div class="div-exterior">
+        <div class="filters-div">
+          <div class="filters-row filters-row1">
+            <button class="filter-button" id="precio-ascendente">Men-May</button>
+            <button class="filter-button" id="precio-descendente">May-Men</button>
+            <button class="filter-button" id="relevancia">Relevancia</button>
+          </div>
+          <div class="filters-row filters-row2">
+            <p class="price">Precio</p>
+            <input type="text" class="price-filter-min" placeholder="Mín" id="minimo">
+            <input type="text" class="price-filter-max" placeholder="Max" id="maximo">
+            <button class="filter" id="filtrarMinMax">Filtrar</button>
+            <button class="filter" id="limpiar">Limpiar</button>
+          </div>
+        </div>
+      </div>
       <div id="products-list"></div>
       <div id="product-error">
       </div>
