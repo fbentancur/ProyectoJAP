@@ -35,5 +35,5 @@ function mostrarError(){
         </div>`
 }
 window.addEventListener("load", function(){
-    mostrarProductosDeCategoria(101)
+    mostrarProductosDeCategoria(localStorage.getItem('catID'))
 })
