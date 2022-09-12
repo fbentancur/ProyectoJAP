@@ -257,6 +257,7 @@ a.custom-card:hover {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
+  padding-bottom: 20px;
 }
 
 .product_image{
@@ -270,4 +271,24 @@ a.custom-card:hover {
   padding-top: 10px;
   padding-bottom: 10px;
   
+}
+.caja_de_comentarios{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.comentario{
+  border: thin solid grey;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+.escribir-comentario{
+  height: 150px;
+  width: 300px;
+}
+.selectStars{
+  width: 100px;
+  height: 30px;
 }
