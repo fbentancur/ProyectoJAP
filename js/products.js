@@ -48,9 +48,8 @@ function mostrarProductosOk(products) {
     }
     let productsContainerArray = document.getElementsByClassName("product-container")
     for(let producto of productsContainerArray){
-        console.log(producto)
         producto.addEventListener("click", function(){
-            localStorage.setItem("id", producto.getAttribute('identificador'))
+            localStorage.setItem("productId", producto.getAttribute('identificador'))
             RedireccionarProductInfo()
         })
     }
