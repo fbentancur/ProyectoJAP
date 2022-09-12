@@ -33,7 +33,7 @@ function mostrarProductosOk(products) {
     productsListDiv.innerHTML = ""
     for (let product of products) {
         productsListDiv.innerHTML += `
-            <div class="product-container">
+            <div class="product-container" identificador="${product.id}">
                 <div class="product-image">
                     <img src="${product.image}" alt="" width="100%" >
                 </div>
@@ -44,7 +44,15 @@ function mostrarProductosOk(products) {
                 <div>
                     <span>${product.soldCount} Vendidos </span>
                 </div>
-            </div>`
+            </div>`     
+    }
+    let productsContainerArray = document.getElementsByClassName("product-container")
+    for(let producto of productsContainerArray){
+        console.log(producto)
+        producto.addEventListener("click", function(){
+            localStorage.setItem("id", producto.getAttribute('identificador'))
+            RedireccionarProductInfo()
+        })
     }
 }
 function mostrarError() {
@@ -59,7 +67,7 @@ window.addEventListener("load", function () {
     mostrarProductosDeCategoria(localStorage.getItem('catID'))
     document.getElementById('filtrarMinMax').addEventListener("click",()=>{
         let minimo = document.getElementById('minimo')
-        let maximo =document.getElementById('maximo')
+        let maximo = document.getElementById('maximo')
         if(minimo.value ===undefined || minimo.value ===""){
             filtroPrecioMin = undefined
         }
@@ -109,3 +117,7 @@ function compararProductos(a, b) {
     else if (aValue < bValue) return orden === "ascendente" ? -1 : 1;
     else return 0;
 }
+function RedireccionarProductInfo(){
+    window.location='product-info.html'
+}
+
