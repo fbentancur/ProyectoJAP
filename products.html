@@ -32,9 +32,16 @@
           </li>
           <li class="nav-item">
           </li>
-          <div class="div-name">
-            <li class="nav-item userName" id="user-name"> </li>
-          </div>
+          <div class="dropdown">
+            <button id="user-name" class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 More
+            </button>
+         <ul class="dropdown-menu">
+            <li class="col"><p class="dropdown-item" id="cart">Carrito</p> </li>
+            <li class="col"><p class="dropdown-item" id="profile">Mi Perfil</p> </li>
+            <li class="col"><p class="dropdown-item" id="logout">Cerrar Sesion</p> </li>
+         </ul>
+         </div>
         </ul>
       </div>
     </div>

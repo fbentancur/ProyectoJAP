@@ -116,6 +116,7 @@ function compararProductos(a, b) {
     else if (aValue < bValue) return orden === "ascendente" ? -1 : 1;
     else return 0;
 }
+
 function RedireccionarProductInfo(){
     window.location='product-info.html'
 }

@@ -1,4 +1,4 @@
-const CATEGORIES_URL = "https://japceibal.github.io/emercado-api/cats/cat.json";
+ const CATEGORIES_URL = "https://japceibal.github.io/emercado-api/cats/cat.json";
 const PUBLISH_PRODUCT_URL = "https://japceibal.github.io/emercado-api/sell/publish.json";
 const PRODUCTS_URL = "https://japceibal.github.io/emercado-api/cats_products/";
 const PRODUCT_INFO_URL = "https://japceibal.github.io/emercado-api/products/";
@@ -44,5 +44,18 @@ window.addEventListener("load",()=>{
  console.log(localStorage.getItem("name"))
  console.log(userName)
  userName.innerHTML=localStorage.getItem("name");
- 
+ let name = document.getElementById("user-name")
+ let cart = document.getElementById("cart")
+ let profile = document.getElementById("profile")
+ let logout = document.getElementById("logout")
+cart.addEventListener("click",()=>{
+  window.location="cart.html"
+})
+profile.addEventListener("click",()=>{
+  window.location="my-profile.html"
+})
+logout.addEventListener("click",()=>{
+  window.location="index.html"
+  localStorage.removeItem("name")
+})
 })

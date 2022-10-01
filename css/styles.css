@@ -215,7 +215,7 @@ a.custom-card:hover {
   padding-bottom: 50px;
 }
 .userName{
-  color: white;
+  color: black;
 }
 .filters-div{
   display: flex;
@@ -292,3 +292,40 @@ a.custom-card:hover {
   width: 100px;
   height: 30px;
 }
+.form-control{
+  width: 30%;
+  margin-left: 30%;
+}
+.form-label{
+  margin-left: 30%;
+}
+.btn-primary{
+  margin-left: 30%;
+}
+#productoRelacionado{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0px;
+}
+#productosRelacionados{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 20px
+}
+.relatedProductImage{
+  height: 15vh;
+}
+
+#contenedorProductoRelacionado{
+  border: thin solid grey;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
