@@ -328,4 +328,43 @@ a.custom-card:hover {
   padding-bottom: 10px;
 }
 
+.cart-title{
+  text-align: center;
+}
 
+
+.cart-product-image{
+  width: 60px;
+  height: 40px;
+}
+
+.product-table td,th{
+  padding-right: 10px;
+}
+
+.input-cantidad{
+  width: 50px;
+}
+
+.product-table thead th{
+  text-decoration: underline;
+  border-bottom: thin solid black;
+  
+}
+.table-div{
+  width: 100%;
+}
+
+.product-table{
+  width: 100%;
+  border: thin solid black;
+}
+.grid-direction{
+  display: grid;
+  grid-template-areas:
+    "direccion numero"
+    "esquina   .     ";
+  justify-content: start;
+  gap:20px;
+  row-gap: 20px;
+}

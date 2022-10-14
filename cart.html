@@ -32,23 +32,64 @@
           <li class="nav-item">
           </li>
           <div class="dropdown">
-            <button id="user-name" class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 
+            <button id="user-name" class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+
             </button>
-         <ul class="dropdown-menu">
-            <li class="col"><p class="dropdown-item" id="cart">Carrito</p> </li>
-            <li class="col"><p class="dropdown-item" id="profile">Mi Perfil</p> </li>
-            <li class="col"><p class="dropdown-item" id="logout">Cerrar Sesion</p> </li>
-         </ul>
-         </div>
+            <ul class="dropdown-menu">
+              <li class="col">
+                <p class="dropdown-item" id="cart">Carrito</p>
+              </li>
+              <li class="col">
+                <p class="dropdown-item" id="profile">Mi Perfil</p>
+              </li>
+              <li class="col">
+                <p class="dropdown-item" id="logout">Cerrar Sesion</p>
+              </li>
+            </ul>
+          </div>
         </ul>
       </div>
     </div>
   </nav>
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+    <div class="container" style="margin-bottom:30px; margin-top:30px;">
+      <h1 class="cart-title">Carrito de compras</h1>
+    </div>
+    <div class="container" style="display: flex; flex-direction: column; gap:30px;">
+      <div id="cart-container"><h3 class="cart-subtitle">Articulos a comprar</h3>
+      </div>
+      <div class="div-envio" style="display:flex; flex-direction: column; gap:10px;">
+        <h3>Tipo de envio</h3>
+        <form action="">
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div><input type="checkbox"> <label>Premium 2 a 5 días (15%)</label></div>
+            <div><input type="checkbox"> <label>Express 5 a 8 días (7%)</label></div>
+            <div><input type="checkbox"> <label>Standard 12 a 15 días (5%)</label></div>
+          </div>
+        </form>
+      </div>
+      <div>
+        <div>
+          <h3>Direccion de envío</h3>
+        </div>
+        <div class="grid-direction">
+        <div>
+          <label for="calle">Calle</label>
+          <br>
+          <input type="text" id="calle">
+        </div>
+        <div>
+          <label for="numero">Numero</label>
+          <br>
+          <input type="text" id="numero">
+        </div>
+        <div>
+          <label for="esquina">Esquina</label>
+          <br>
+          <input type="text" id="esquina">
+        </div>
+      </div>
       </div>
     </div>
   </main>

@@ -32,7 +32,6 @@ fetch(PRODUCT_INFO_URL+localStorage.getItem('productId')+EXT_TYPE)
 
         
         for(let productoRelacionado of data.relatedProducts){
-            console.log(productoRelacionado)
             let divRelatedProduct=document.createElement("div")
             divRelatedProduct.innerHTML+=`<div id="contenedorProductoRelacionado"><h3>${productoRelacionado.name}</h3>
             <img class='relatedProductImage' src="${productoRelacionado.image}"></div></div>`

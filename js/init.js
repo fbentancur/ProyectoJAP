@@ -41,10 +41,7 @@ let getJSONData = function(url){
 }
 window.addEventListener("load",()=>{
  let userName = document.getElementById('user-name');
- console.log(localStorage.getItem("name"))
- console.log(userName)
  userName.innerHTML=localStorage.getItem("name");
- let name = document.getElementById("user-name")
  let cart = document.getElementById("cart")
  let profile = document.getElementById("profile")
  let logout = document.getElementById("logout")
