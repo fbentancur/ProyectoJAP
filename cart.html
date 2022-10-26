@@ -52,7 +52,7 @@
     </div>
   </nav>
   <main>
-    <form action="">
+    <form id="formulario">
     <div class="container" style="margin-bottom:30px; margin-top:30px;">
       <h1 class="cart-title">Carrito de compras</h1>
     </div>
@@ -63,9 +63,9 @@
         <h3>Tipo de envio</h3>
         
           <div style="display:flex; flex-direction:column; gap:10px;">
-            <div><label><input type="radio" name="tipo-de-envio" id="premium"> Premium 2 a 5 días (15%)</label></div>
-            <div><label><input type="radio" name="tipo-de-envio" id="express"> Express 5 a 8 días (7%)</label></div>
-            <div><label><input type="radio" name="tipo-de-envio" id="standard">Standard 12 a 15 días (5%)</label></div>
+            <div><label><input type="radio" name="tipo-de-envio" id="premium" required> Premium 2 a 5 días (15%)</label></div>
+            <div><label><input type="radio" name="tipo-de-envio" id="express" required> Express 5 a 8 días (7%)</label></div>
+            <div><label><input type="radio" name="tipo-de-envio" id="standard"required>Standard 12 a 15 días (5%)</label></div>
           </div>
       </div>
       <div>
@@ -121,10 +121,8 @@
       <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="boton-modal">
         No se ha seleccionado un metodo de pago, haga click aqui y elija uno
       </button>
-      <input type="submit" class="btn btn-primary" id="btn-comprar">Comprar</input>
-    </form>
-    <!-- Modal -->
-  <form id="form-modal">
+      <div id="error"></div>
+      <input type="submit" class="btn btn-primary" id="btn-comprar" placeholder="Comprar"></input>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
