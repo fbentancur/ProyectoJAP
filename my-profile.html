@@ -60,11 +60,42 @@
     </div>
   </nav>
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+    <h1 id="perfil">Perfil</h1>
+    <form class="needs-validation" novalidate>
+    <div class="grid-direction-user">
+      <div>
+        <label for="nombre">Nombre</label>
+        <br>
+        <input class="form-control perfil-inputs" type="text" id="nombre" required>
       </div>
+      <div>
+        <label for="segundo-nombre">Segundo Nombre</label>
+        <br>
+        <input class="form-control perfil-inputs" type="text" id="segundo-nombre" required>
+      </div>
+      <div>
+        <label for="apellido">Apellido</label>
+        <br>
+        <input class="form-control perfil-inputs" type="text" id="apellido" required>
+      </div>
+      <div>
+        <label for="segundo-apellido">Segundo apellido</label>
+        <br>
+        <input class="form-control perfil-inputs" type="text" id="segundo-apellido" required>
+      </div>
+      <div>
+        <label for="mail">Email</label>
+        <br>
+        <input class="form-control perfil-inputs" type="email" id="mail" required>
+      </div>
+      <div>
+        <label for="telefono">Telefono</label>
+        <br>
+        <input class="form-control perfil-inputs" type="text" id="telefono" required>
+      </div>
+      <button type="submit" class="btn btn-primary" id="boton-pefil" data-bs-dismiss="modal">Save changes</button>
     </div>
+  </form>
   </main>
   <footer class="text-muted">
     <div class="container">

@@ -262,7 +262,7 @@ a.custom-card:hover {
 
 .product_image{
   height: 15vh;
-  
+
 }
 .divImagenIndividual{
   border: thin solid grey;
@@ -270,7 +270,7 @@ a.custom-card:hover {
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  
+
 }
 .caja_de_comentarios{
   display: flex;
@@ -349,7 +349,7 @@ a.custom-card:hover {
 .product-table thead th{
   text-decoration: underline;
   border-bottom: thin solid black;
-  
+
 }
 .table-div{
   width: 100%;
@@ -376,9 +376,21 @@ a.custom-card:hover {
   display: flex;
   align-items: baseline;
 }
-form :invalid {
-  border: 2px solid #ff0000;
+.form-control{
+  width: 150px;
+  margin-left: 0px;
 }
-form :valid {
-  border: 2px solid green;
+.grid-direction-user{
+  display: grid;
+  grid-template-areas:
+    "direccion numero"
+    "esquina   .     ";
+  justify-content: center;
+  margin-top: 200px;
+  gap:20px;
+  row-gap: 20px;
+}
+#perfil{
+  display: flex;
+  justify-content: center;
 }
